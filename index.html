@@ -5,78 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Framework - Support</title>
     <style>
+        /* Replicating the App Home Screen Aesthetic */
         body {
-            background-color: #000000; /* Pure Black Background */
-            color: #ffffff; /* Default text white */
+            background-color: #000000; /* Pure Black */
+            color: #ffffff; /* White Text */
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             text-align: center;
             margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            min-height: 100vh; /* Centers everything vertically */
+            min-height: 100vh;
             padding: 20px;
+            box-sizing: border-box;
         }
 
-        /* The Centered Logo */
+        /* Perfect Centering for the Logo */
+        .logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
         .logo { 
             width: 180px; 
-            margin-bottom: 40px; 
+            height: auto;
         }
 
-        /* Title: THE FRAMEWORK */
+        /* Replicating Home Screen Typography */
         .app-title {
-            font-size: 2.5em; /* Large and bold */
+            font-size: 2.5em;
             font-weight: 800;
             text-transform: uppercase;
             margin: 0;
             line-height: 1.1;
+            letter-spacing: 1px;
         }
 
-        /* Subtitle: DIGITAL LOGBOOK */
         .app-subtitle {
-            font-size: 1.2em; /* Smaller */
+            font-size: 1.2em;
             font-weight: 600;
-            color: #F29F05; /* Your exact Logo Gold */
+            color: #F29F05; /* Exact Logo Gold */
             text-transform: uppercase;
-            letter-spacing: 3px; /* Mimics the spacing in your screenshot */
-            margin-top: 5px;
+            letter-spacing: 4px; /* Matches your spaced-out design */
+            margin-top: 8px;
             margin-bottom: 50px;
         }
 
-        /* The Interactive Link Buttons */
-        .link-container { margin-top: 20px; }
+        /* Interactive Action Buttons */
+        .link-container { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
         
         .action-button {
             display: inline-block;
+            min-width: 200px;
             color: #ffffff;
             text-decoration: none;
-            border: 2px solid #ffffff; /* White buttons to start */
-            padding: 12px 30px;
-            margin: 10px;
-            border-radius: 6px;
+            border: 2px solid #ffffff;
+            padding: 14px 30px;
+            border-radius: 8px;
             font-weight: 700;
             text-transform: uppercase;
-            transition: 0.3s;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
         }
 
-        /* Hover effect: Buttons turn Gold and filled */
+        /* Hover Effect: Changes to Gold Theme */
         .action-button:hover { 
             background-color: #F29F05; 
             border-color: #F29F05;
-            color: #000000; /* Black text inside gold button */
+            color: #000000;
+            transform: translateY(-2px);
         }
 
         .footer { 
-            margin-top: 100px; 
-            font-size: 0.8em; 
+            margin-top: 80px; 
+            font-size: 0.75em; 
             color: #444; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
-    <img src="AppLogo.png" alt="The Framework Logo" class="logo">
+    <div class="logo-container">
+        <img src="AppLogo.png" alt="The Framework Logo" class="logo">
+    </div>
 
     <h1 class="app-title">THE FRAMEWORK</h1>
     <p class="app-subtitle">DIGITAL LOGBOOK</p>
@@ -87,7 +107,7 @@
     </div>
 
     <div class="footer">
-        © 2026 The Framework - Digital Logbook. All rights reserved.
+        © 2026 The Framework - Digital Logbook
     </div>
 
 </body>
