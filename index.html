@@ -6,38 +6,84 @@
     <title>The Framework - Support</title>
     <style>
         body {
-            background-color: #000000; /* Deep Black */
-            color: #ffffff; /* White Text */
+            background-color: #000000; /* Pure Black Background */
+            color: #ffffff; /* Default text white */
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             text-align: center;
-            padding: 50px 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh; /* Centers everything vertically */
+            padding: 20px;
         }
-        .logo { width: 180px; margin-bottom: 20px; }
-        h1 { color: #F29F05; /* Gold accent */ letter-spacing: 1px; }
-        .link-box { margin-top: 30px; }
-        a {
+
+        /* The Centered Logo */
+        .logo { 
+            width: 180px; 
+            margin-bottom: 40px; 
+        }
+
+        /* Title: THE FRAMEWORK */
+        .app-title {
+            font-size: 2.5em; /* Large and bold */
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        /* Subtitle: DIGITAL LOGBOOK */
+        .app-subtitle {
+            font-size: 1.2em; /* Smaller */
+            font-weight: 600;
+            color: #F29F05; /* Your exact Logo Gold */
+            text-transform: uppercase;
+            letter-spacing: 3px; /* Mimics the spacing in your screenshot */
+            margin-top: 5px;
+            margin-bottom: 50px;
+        }
+
+        /* The Interactive Link Buttons */
+        .link-container { margin-top: 20px; }
+        
+        .action-button {
             display: inline-block;
-            color: #F29F05;
+            color: #ffffff;
             text-decoration: none;
-            border: 1px solid #F29F057;
-            padding: 10px 25px;
+            border: 2px solid #ffffff; /* White buttons to start */
+            padding: 12px 30px;
             margin: 10px;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-transform: uppercase;
             transition: 0.3s;
         }
-        a:hover { background-color: #F29F05; color: #000; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #666; }
+
+        /* Hover effect: Buttons turn Gold and filled */
+        .action-button:hover { 
+            background-color: #F29F05; 
+            border-color: #F29F05;
+            color: #000000; /* Black text inside gold button */
+        }
+
+        .footer { 
+            margin-top: 100px; 
+            font-size: 0.8em; 
+            color: #444; 
+        }
     </style>
 </head>
 <body>
 
     <img src="AppLogo.png" alt="The Framework Logo" class="logo">
-    <h1>THE FRAMEWORK</h1>
-    <p>DIGITAL LOGBOOK</p>
 
-    <div class="link-box">
-        <a href="mailto:TheFrameworkDigitalLogbook@gmail.com">Email Support</a>
-        <a href="Privacy_Policy_The_Framework_Digital_Logbook.pdf" target="_blank">Privacy Policy</a>
+    <h1 class="app-title">THE FRAMEWORK</h1>
+    <p class="app-subtitle">DIGITAL LOGBOOK</p>
+
+    <div class="link-container">
+        <a href="mailto:TheFrameworkDigitalLogbook@gmail.com" class="action-button">Email Support</a>
+        <a href="Privacy_Policy_The_Framework_Digital_Logbook.pdf" target="_blank" class="action-button">Privacy Policy</a>
     </div>
 
     <div class="footer">
